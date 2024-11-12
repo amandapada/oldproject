@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us - Labrielle</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="images/logo.png" width="300">
+                    </div>
+        
+                    <nav>
+                        <ul id="menuitems">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/menu.png" width="50px" height="50px" class="menu" onclick="menutoggle()">
+                </div>
+        </div>
+
+<!---------- slide ------------>
+        <section class="section">
+            <div class="slider">
+                <div class="slide">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="st first">
+                        <img src="images/ring2.jpg" alt="">
+                    </div>
+
+                    <div class="st">
+                        <img src="images/err1.jpg" alt="">
+                    </div>
+
+                    <div class="st">
+                        <img src="images/shoes3.jpeg" alt="">
+                    </div>
+
+                    <div class="st">
+                        <img src="images/jwl2.jpg" alt="">
+                    </div>
+
+                    <div class="nav-auto">
+                        <div class="a-b1"></div>
+                        <div class="a-b2"></div>
+                        <div class="a-b3"></div>
+                        <div class="a-b4"></div>
+                    </div>
+                </div>
+
+                <div class="nav1">
+                    <label for="radio1" class="n-btn"></label>
+                    <label for="radio2" class="n-btn"></label>
+                    <label for="radio3" class="n-btn"></label>
+                    <label for="radio4" class="n-btn"></label>
+                </div>
+            </div>
+
+        </section>
+        <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById?('radio' + counter):checked=true;
+            counter++;
+            if(counter > 4){
+                counter=1
+            }
+        },5000);
+        </script>
+ 
+<div id="description">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/bcgdress.jpg" height="350" width="400" class="img"> 
+                <div class="text">
+                    <h2>About Us</h2>
+                    <span><p>La Brielle Gems and Wears is a well-established fashion shop situated on the beautiful Isle of Barnawa, Kaduna with an online presence.  We are perfectly located for local and international customers to find their perfect dress.  We stock an exquisite collection of dresses and gems from some of the best and most recognisable designers around. <br> <br>
+                        We are proud of our excellent reputation and outstanding customer service. You and your friends and well-wishers party will be the centre of attention,  with our dedicated consultants devoting their time to you.</p></span>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<div id="description">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/ring1.jpg" height="400" width="" class="img"> 
+                <div class="text">
+                    <h2>Our Mission</h2>
+                    <p>To design authentic produxts for consumers of all ages and genders</p> <br> <br>
+                    <h2>Our Mission</h2>
+                    <p>To become an internationally popular brand in all products that enhance lifestyle</p>
+                </div>
+            </div>                       
+        </div>
+    </div>
+</div>
+
+<div id="description">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/dress1.jpg" height="350" width="400" class="img">                       
+                <div class="text">
+                    <h2>Our Products</h2>
+                    <p>Our collection of dresses, shoes and accessories are carefully chosen to offer an <br>unrivalled choice of styles to suit all tastes and body shapes. Our dresses are <br> available in all sizes.</p>
+                    <a href="product.html" class="btn"> Our Products &#8594; </a>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+            
+<!-------------- footer --------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                       <img src="images/logo2.jpg" height="80">
+                       <p>Let's Level Up Your wardrobe</p>
+                    </div>
+
+                </div>
+                <P class="social-media"> <a href="https://instagram.com/labrielle_gemsandwears?igshid=YmMyMTA2M2Y="><img src="images/insta.png" height="15px" width="15px"> Instagram</a> &nbsp; &#124; &nbsp; <a href="contact.html"><img src="images/gmail1.png" height="13px" width="13px"> labriellegems&#64;gmail.com</a></P>
+                <hr>
+                <p class="copyright">&copy;Copyright 2022 labrielle_gemsandwears</p>
+            </div>
+        </div>
+
+<!----js for togglemenu----->
+        <script>
+            var menuitems = document.getElementById("menuitems");
+
+            menuitems.style.maxHeight = "0px";
+
+            function menutoggle(){
+
+                if(menuitems.style.maxHeight == "0px")
+                    {
+                        menuitems.style.maxHeight = "200px"
+                    }
+                else
+                    {
+                        menuitems.style.maxHeight = "0px"
+                    }
+            }
+        </script>
+    </body>
+</html>

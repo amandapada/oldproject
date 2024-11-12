@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All Products - LaBrielle</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <style rel="stylesheet">
+            .header{
+                height: 300px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="images/logo.png" width="300">
+                    </div>
+        
+                    <nav>
+                        <ul id="menuitems">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/menu.png" width="50px" height="50px" class="menu" onclick="menutoggle()">
+
+                </div>
+            </div>
+
+            <div class="small-container">
+                <div class="row-2">
+                    <h2>All Products</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <a href="dress1-detail.html"><img src="images/dress1.jpg"></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="dress2-detail.html"><img src="images/dress2.jpg"></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="dress3-detail.html"><img src="images/dress3.jpg"></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="dress4-detail.html"><img src="images/dress4.jpg"></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <a href="dress5-detail.html"><img src="images/dress5.jpg"></a> 
+                    </div>
+                    <div class="col-4">
+                        <a href="dress6-detail.html"><img src="images/dress6.jpg"></a>
+                    </div>
+                    <div class="col-4"> 
+                        <a href="err1-detail.html"><img src="images/err1.jpg"></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="err2-detail.html"><img src="images/err2.jpg"></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <a href="j1-detail.html"><img src="images/j1.jpg"></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="j2-detail.html"><img src="images/j2.jpg"></a>
+                    </div>
+                    <div class="col-4"> 
+                        <a href="j3-detail.html"><img src="images/j3.jpg"></a>
+                    </div>
+                    <div class="col-4">
+                        <a href="j4-detail.html"><img src="images/j4.jpg"></a>
+                    </div>
+                </div>
+
+                <div class="page-btn">
+                    <a href="product.html"><span>1</span></a>
+                    <a href="product2.html"><span>2</span></a>
+                </div>
+            </div>
+    
+    
+<!-------------- footer --------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                       <img src="images/logo2.jpg" height="80">
+                       <p>Let's Level Up Your wardrobe</p>
+                    </div>
+
+                </div>
+                <P class="social-media"> <a href="https://instagram.com/labrielle_gemsandwears?igshid=YmMyMTA2M2Y="><img src="images/insta.png" height="15px" width="15px"> Instagram</a> &nbsp; &#124; &nbsp; <a href="contact.html"><img src="images/gmail1.png" height="13px" width="13px"> labriellegems&#64;gmail.com</a></P>
+                <hr>
+                <p class="copyright">&copy;Copyright 2022 labrielle_gemsandwears</p>
+            </div>
+        </div>
+
+<!----js for togglemenu----->
+        <script>
+            var menuitems = document.getElementById("menuitems");
+
+            menuitems.style.maxHeight = "0px";
+
+            function menutoggle(){
+
+                if(menuitems.style.maxHeight == "0px")
+                    {
+                        menuitems.style.maxHeight = "200px"
+                    }
+                else
+                    {
+                        menuitems.style.maxHeight = "0px"
+                    }
+            }
+        </script>        
+    </body>
+</html>
