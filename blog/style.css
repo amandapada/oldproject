@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: auto;
+}
+
+.header {
+    height: 400px;
+    background: url(images/bg2.jpeg);
+    background-size: contain;
+    filter: blur(6px);
+    position: relative;
+}
+
+.title h1 {
+    position: absolute;
+    margin-left: 350px;
+    top: 300px;
+    text-transform: uppercase;
+    font-family: baskerville old face;
+    font-weight: 490;
+    font-size: 60px;
+    color: white;
+}
+
+nav.menu{
+    display: flex;
+    float: right;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+    padding: 0 29px 10px;
+    background: #fff0;
+    width: 400px;
+    margin-top: 30px;
+    margin-right: 20px;
+    bottom: 400px;
+}
+
+nav.menu:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #181818;
+    z-index: -1;
+    box-shadow: 1px 1px 2px 0px #fff;
+}
+
+nav.menu a{
+    text-decoration: none;
+}
+
+input {
+    display: none;
+}
+
+label {
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    min-width: 50px;
+    height: 40px;
+    margin: 10px 20px;
+    text-align: center;
+    display: inline-grid;
+    align-items: center;
+    color: green;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+    cursor: pointer;
+}
+
+label:hover {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+    color: rgba(255, 251, 249, 0.952);
+    height: 70px;
+}
+
+section {
+    align-items: center;
+    justify-content: center;
+}
+
+section h2{
+    margin-left: 80px;
+    margin-top: 40px;
+    font-size: 35px;
+    font-weight: 300;
+    font-family: baskerville old face;
+    color: green;
+}
+
+.image-container{
+    position: relative;
+    width: 500px;
+    height: 800px;
+    cursor: pointer;
+    float: right;
+    margin-top: 30px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.image-container:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: all 800ms linear;
+    transform-origin: 0 50%;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.image-container:hover:before{
+    transform: scale(1);
+}
+
+span{
+    position: absolute;
+    color: white;
+    opacity: 0;
+    transition: all 100ms linear;
+    z-index: 3;
+}
+
+.title{
+    font-size: 2rem;
+    left: 25%;
+    bottom: 20%;
+}
+
+.description{
+    font-size: 1rem;
+    left: 25%;
+    bottom: 8%;
+    width: 50%;
+}
+
+.image-container:hover span{
+    opacity: 1;
+}
+
+
+@media (max-width: 424px){
+    .title{
+        font-size: 1.5rem;
+        left: 25%;
+        top: 50%;
+    }
+
+    .description{
+        font-size: 0.8rem;
+        left: 25%;
+        top: 65%;
+        width: 50%;
+    }
+}
+
+.container {
+    min-width: 1080px;
+    margin: auto;
+    margin-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col {
+    width: 320px;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-basis: 20%;
+}
+
+.col img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.col img:hover{
+    transform: translateY(-5px);
+}
+
+.button{
+    background-color: rgb(3, 63, 3);
+    margin-left: 35px;
+    padding: 12px;
+    margin-top: 20px;
+    width: 100px;
+    border-radius: 20px;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.button p{
+    margin-left: 8px;
+}
+
+.button:hover{
+    background-color: green;
+}
+
+/*-------footer------*/
+footer{
+    background-color: rgb(3, 63, 3);
+}
+
+.footer{
+    margin-top: 40px;
+    margin-left: 40%;
+}
+
+img.social {
+    width:50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+img.social:hover {
+    transform: scale(0.8);
+}
+
+
